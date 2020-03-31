@@ -1,6 +1,6 @@
 terraform {
   backend "remote" {
-    organization = "berchevorg"
+    organization = "georgiman"
 
     workspaces {
       name = "trigger_run"
