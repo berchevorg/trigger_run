@@ -1,6 +1,6 @@
 terraform {
   backend "remote" {
-    organization = "twentyfour24"
+    organization = "berchevorg"
 
     workspaces {
       name = "trigger_run"
@@ -10,7 +10,7 @@ terraform {
 
 resource "random_pet" "name" {
 
-  length    = "6"
+  length    = "7"
   separator = "-"
 }
 
