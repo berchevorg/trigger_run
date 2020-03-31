@@ -8,12 +8,14 @@ terraform {
   }
 }
 
+variable "ccount" {}
+
 resource "random_pet" "name" {
 
-  length    = "9"
+  length    = var.ccount
   separator = "-"
 }
 
 output "out" {
-  value = "${random_pet.name.id}"
+  value = random_pet.name.id
 }
